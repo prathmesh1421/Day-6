@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px;
+      width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+   
+
+    button {
+      padding: 10px 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #addBtn {
+      background: #28a745;
+      color: white;
+    }
+
+    #addBtn:hover {
+      background: #218838;
+    }
+
+    .edit {
+      background: #ffc107;
+      color: black;
+      margin-left: 5px;
+    }
+
+     .delete {
+      background: #dc3545;
+      color: white;
+      margin-left: 5px;
+    }
+
+   ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    li {
+      background: #f8f9fa;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.3s;
+    }
+
+    li span {
+      flex: 1;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>To-Do App</h2>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
